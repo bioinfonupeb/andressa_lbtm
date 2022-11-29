@@ -1,7 +1,7 @@
 experiment_name: 'andressa'
 base_dir: '/home/lauro/nupeb/rede-micro/redemicro-andressa-lbtm'
-manifest_file: '/home/lauro/nupeb/rede-micro/redemicro-andressa-lbtm/data/manifest.csv'
-metadata_file: '/home/lauro/nupeb/rede-micro/redemicro-andressa-lbtm/data/metadata.tsv'
+manifest_file: '/home/lauro/nupeb/rede-micro/redemicro-andressa-lbtm/data/manifest/andressa-manifest.csv'
+metadata_file: '/home/lauro/nupeb/rede-micro/redemicro-andressa-lbtm/data/metadata/andressa-metadata.tsv'
 class_col: 'group-id'
 classifier_file: '/home/lauro/nupeb/dados_brutos_rede_genoma/16S_classifiers_qiime2/silva-138-99-nb-classifier.qza'
 replace_files: False
