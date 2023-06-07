@@ -15,9 +15,9 @@ BASEURL="https://raw.githubusercontent.com/lauromoraes/microbiom/main/nb-templat
 
 # Define pipeline steps
 STEPS=(
-#	"step-prepare-data"
-#	"step-quality-control"
-#	"step-rarefaction-analysis"
+	"step-prepare-data"
+	"step-quality-control"
+	"step-rarefaction-analysis"
 	"step-metataxonomy"
 	"step-diversity-analysis"
 	"step-abundance-analysis"
@@ -70,7 +70,7 @@ for i in "${!STEPS[@]}"; do
 	# Download notebook if it not exists
 	if ! [ -f "$STEPFILE" ]; then
 		echo "... Downloading file: ${STEPFILE} ...";
-		wget "${BASEURL}/${STEPS[i]}.ipynb" -O "${STEPSDIR}/${STEPS[i]}.ipynb";
+		wget --no-cache "${BASEURL}/${STEPS[i]}.ipynb" -O "${STEPSDIR}/${STEPS[i]}.ipynb";
 	fi
 
 	# Execute notebook
